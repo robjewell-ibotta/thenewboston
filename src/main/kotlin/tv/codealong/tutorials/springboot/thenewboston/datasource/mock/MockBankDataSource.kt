@@ -7,7 +7,7 @@ import tv.codealong.tutorials.springboot.thenewboston.model.Bank
 @Repository
 class MockBankDataSource : BankDataSource {
 
-  override fun getBanks(): Collection<Bank> {
-    return listOf(Bank("", 0.0, 1))
-  }
+  val banks = listOf(Bank("", 0.0, 1))
+
+  override fun getBanks(): Collection<Bank> = banks
 }
