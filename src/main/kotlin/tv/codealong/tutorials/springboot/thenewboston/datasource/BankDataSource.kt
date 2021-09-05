@@ -4,5 +4,5 @@ import tv.codealong.tutorials.springboot.thenewboston.model.Bank
 
 interface BankDataSource {
 
-  fun getBanks(): Collection<Bank>
+  fun retrieveBanks(): Collection<Bank>
 }
